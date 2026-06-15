@@ -1,4 +1,4 @@
-const API = 'http://localhost:3000/api';
+const API = 'https://alny-site-production.up.railway.app/api';
 const app = document.getElementById('app');
 
 function navigate(page) {
