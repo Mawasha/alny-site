@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALNY HR Consulting — Recrutement & Talents</title>
+  <meta name="description" content="Cabinet de recrutement et mise à disposition de talents à Douala, Cameroun. ALNY HR Consulting — votre partenaire RH de confiance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" onclick="navigate('home')">
+        <span class="logo-text">ALNY</span>
+        <span class="logo-sub">HR Consulting</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" onclick="navigate('home')" data-page="home">Accueil</a></li>
+        <li><a href="#" onclick="navigate('about')" data-page="about">À propos</a></li>
+        <li><a href="#" onclick="navigate('services')" data-page="services">Services</a></li>
+        <li><a href="#" onclick="navigate('jobs')" data-page="jobs">Offres d'emploi</a></li>
+        <li><a href="#" onclick="navigate('contact')" data-page="contact" class="nav-cta">Nous contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======== CONTENU PRINCIPAL (injecté par JS) ======== -->
+  <main id="app">
+    <div class="loader">
+      <div class="loader-spinner"></div>
+      <p>Chargement...</p>
+    </div>
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-text">ALNY</span>
+        <span class="logo-sub">HR Consulting</span>
+        <p class="footer-tagline" id="footer-tagline">Votre partenaire RH de confiance</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#" onclick="navigate('home')">Accueil</a></li>
+          <li><a href="#" onclick="navigate('about')">À propos</a></li>
+          <li><a href="#" onclick="navigate('services')">Services</a></li>
+          <li><a href="#" onclick="navigate('jobs')">Offres d'emploi</a></li>
+          <li><a href="#" onclick="navigate('contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p id="footer-address">Douala, Cameroun</p>
+        <p id="footer-email">contact@alny-hr.com</p>
+        <p id="footer-phone">+237 6XX XXX XXX</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ALNY HR Consulting. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
